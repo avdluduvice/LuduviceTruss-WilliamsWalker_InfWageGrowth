@@ -4,7 +4,7 @@
 
 This repository contains the code and data associated with the FRBC’s Economic Commentary *“Did Inflation Affect Households Differently? A Look at the Postpandemic Inflation and Wage Growth Dynamics”* by André Victor D. Luduvice, Anaya M. Truss-Williams, and Christopher J. Walker.
 
-The data and code in this replication package implement the data transformations and calculations using data from the Bureau of Labor Statistics and the Current Population Survey (via the Federal Reserve Banks of Atlanta and Kansas City). Additional data is retrieved from the Federal Reserve Bank of St. Louis’s FRED database for the production of the figures. The code languages used are R and Stata. The 
+The data and code in this replication package implement the data transformations and calculations using data from the Bureau of Labor Statistics (BLS) and the Current Population Survey (CPS) via the Federal Reserve Banks of Atlanta and Kansas City (FRBA and FRBKC, respectively). Additional data is retrieved from the Federal Reserve Bank of St. Louis’s FRED database for the production of the figures. The code languages used are R and Stata. The 
 
 ## Recommended Citation
 
@@ -38,8 +38,7 @@ Luduvice, André Victor D., Truss-Williams, Anaya, and Christopher J. Walker. 20
 
 All data used in this Commentary are publicly available.
 
-- **Federal Reserve Bank of Kansas City - Harmonized CPS Data**  
-  https://cps.kansascityfed.org/
+This Commentary uses data from BLS's CPS via the FRBKC's Center for the Advancement of Data and Research in Economics (CADRE). The data is the Atlanta Fed’s Harmonized Variable and Longitudinally Matched dataset. Note: the data is not provided. It can bre freely donwloaded from `https://cps.kansascityfed.org/`.
 
 - **Bureau of Labor Statistics R-CPI-I Series**  
   https://www.bls.gov/cpi/research-series/r-cpi-i.htm
@@ -50,8 +49,7 @@ All data used in this Commentary are publicly available.
 - **FRED - CPI-U Series (CPIAUCSL)**  
   https://fred.stlouisfed.org/series/CPIAUCSL
 
-> Notes:  
-  The R-CPI-I series used in this project was retrieved on July 18th, 2025.  
+> Notes:    
   This Commentary requires an API key to retrieve data from the FRED database used in the recession shading routine called in script `AL_AT_CW_2025_Replication_Master.R`. A key can be requested at `https://fred.stlouisfed.org/docs/api/api_key.html`.
 
 ## License
