@@ -6,6 +6,10 @@ This repository contains the code and data associated with the FRBC’s Economic
 
 The data and code in this replication package implement the data transformations and calculations using data from the Bureau of Labor Statistics and the Current Population Survey (via the Federal Reserve Banks of Atlanta and Kansas City). Additional data is retrieved from the Federal Reserve Bank of St. Louis’s FRED database for the production of the figures. The code languages used are R and Stata. The 
 
+## Recommended Citation
+
+Luduvice, André Victor D., Truss-Williams, Anaya, and Christopher J. Walker. 2025. "Did Inflation Affect Households Differently? A Look at the Postpandemic Inflation and Wage Growth Dynamics." Economic Commentary, no. 2025-XX (September). https://doi.org/10.26509/frbc-ec-2025xx.
+
 ## Contents
 
 - **Data**
