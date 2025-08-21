@@ -45,5 +45,13 @@ All data used in this Commentary are publicly available.
 - **FRED - CPI-U Series (CPIAUCSL)**  
   https://fred.stlouisfed.org/series/CPIAUCSL
 
-> Note: The R-CPI-I series used in this project was retrieved on July 18th, 2025.
+> Notes:  
+  The R-CPI-I series used in this project was retrieved on July 18th, 2025.  
+  This Commentary requires an API key to retrieve data from the FRED database used in the recession shading routine called in script `AL_AT_CW_2025_Replication_Master.R`. A key can be requested at `https://fred.stlouisfed.org/docs/api/api_key.html`.
 
+## License
+
+This work is licensed under a
+[Creative Commons Attribution 4.0 International License][cc-by].
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
