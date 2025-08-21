@@ -38,16 +38,11 @@ Luduvice, André Victor D., Truss-Williams, Anaya, and Christopher J. Walker. 20
 
 All data used in this Commentary are publicly available.
 
-This Commentary uses data from BLS's CPS via the FRBKC's Center for the Advancement of Data and Research in Economics (CADRE). The data is the Atlanta Fed’s Harmonized Variable and Longitudinally Matched dataset. Note: the data is not provided. It can bre freely donwloaded from `https://cps.kansascityfed.org/`.
+This Commentary uses data from BLS's CPS via the FRBKC's Center for the Advancement of Data and Research in Economics (CADRE). The data is the Atlanta Fed’s Harmonized Variable and Longitudinally Matched dataset. Note: the data is not provided. It can be freely donwloaded from https://cps.kansascityfed.org/.
 
-- **Bureau of Labor Statistics R-CPI-I Series**  
-  https://www.bls.gov/cpi/research-series/r-cpi-i.htm
+This Commentary uses raw data from the BLS's R-CPI-i and R-C-CPI-I series. Note: the data are provided at the Data folder. They can be freely downloaded from https://www.bls.gov/cpi/research-series/r-cpi-i.htm.
 
-- **FRED - NBER-Based Recession Indicators**  
-  https://fred.stlouisfed.org/series/USRECD
-
-- **FRED - CPI-U Series (CPIAUCSL)**  
-  https://fred.stlouisfed.org/series/CPIAUCSL
+This Commentary uses raw data from the Federal Reserve Bank of St. Louis’s FRED database for the CPI-U index and for the NBER's recession indicators. Note: the data are not provided. The data are downloaded in running time wish the use of FRED's API key. The data can be freely downloaded from https://fred.stlouisfed.org/series/USRECD and  https://fred.stlouisfed.org/series/CPIAUCSL.
 
 > Notes:    
   This Commentary requires an API key to retrieve data from the FRED database used in the recession shading routine called in script `AL_AT_CW_2025_Replication_Master.R`. A key can be requested at `https://fred.stlouisfed.org/docs/api/api_key.html`.
