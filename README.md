@@ -52,7 +52,7 @@ This Commentary uses raw data from the BLS's R-CPI-I and R-C-CPI-I series. Note:
 This Commentary uses raw data from the Federal Reserve Bank of St. Louis’s FRED database for the CPI-U index and for the NBER's recession indicators. Note: the data are not provided. The data are downloaded in running time with the use of FRED's API key. The data can be freely downloaded from https://fred.stlouisfed.org/series/USRECD and  https://fred.stlouisfed.org/series/CPIAUCSL.
 
 > Notes:    
-  The API key necessary to retrieve data from the FRED database is used in the recession shading routine called in script `AL_AT_CW_2025_Replication_Master.R` and in the data pull command for the CPI-U in script `AL_AT_CW_2025_Replication_Wage_Cleaning.R`. A key can be requested at `https://fred.stlouisfed.org/docs/api/api_key.html`.
+  The API key necessary to retrieve data from the FRED database is used in the recession shading routine called in script `AL_AT_CW_2025_Replication_Master.R` and in the data pull command for the CPI-U in script `AL_AT_CW_2025_Replication_Wage_Cleaning.R`. A key can be requested at https://fred.stlouisfed.org/docs/api/api_key.html.
 
 ## License
 
