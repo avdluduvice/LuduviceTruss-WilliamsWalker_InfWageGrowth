@@ -11,15 +11,13 @@ Cleveland, August 2025
 ********************************************************************************/
 
 * Set data path for where the CPS_harmonized_variable_longitudinally_matched_age16plus.dta 
-* file is located (data_final) as well as where you want the final data to be placed 
-* for pulling the cleaned data into the R scripts
+
 clear 
-global data "filepath\raw_data"
-global data_final "filepath\data"
+global data "filepath\Data"
 
 use "$data\CPS_harmonized_variable_longitudinally_matched_age16plus.dta"
 
-* now, we want to create the wages that comes from the paper Daly, Hobijn and Wiles (2012)
+* now, we want to create the wages that comes from Daly, Hobijn and Wiles (2012)
 
 /* With the Longitudinal Data we have, we can now go ahead and begin to re-create the
 wages that FRB Atlanta has. But we also want to have the following in terms of both 
@@ -56,7 +54,7 @@ forval i=1/5{
 	egen mwagegrowth_agg_q`i' = median(wagerate_agg_q`i'), by (date)
 }
 
-* NYFed BINS
+* NYFed EGIs bins
 * here, we will combine the bottom 40% and the middle 40%
 gen wage_agg_40 = 1 if (wage_agg_q == 1 | wage_agg_q == 2)
 replace wage_agg_40 = 2 if (wage_agg_q == 3 | wage_agg_q == 4)
@@ -71,7 +69,7 @@ egen wagegrowth_agg_m40 = mean(wagerate_agg_m40), by (date)
 egen mwagegrowth_agg_b40 = median(wagerate_agg_b40), by (date)
 egen mwagegrowth_agg_m40 = median(wagerate_agg_m40), by (date)
 
-********************************* FILE CREATION ********************************
+********************************* DATA FILE CREATION ********************************
 
 * now, let's only keep the variables that we want: 
 keep date wagegrowth_agg wagegrowth_agg_q1 wagegrowth_agg_q2 wagegrowth_agg_q3 wagegrowth_agg_q4 wagegrowth_agg_q5 wagegrowth_agg_b40 wagegrowth_agg_m40 mwagegrowth_agg mwagegrowth_agg_q1 mwagegrowth_agg_q2 mwagegrowth_agg_q3 mwagegrowth_agg_q4 mwagegrowth_agg_q5 mwagegrowth_agg_b40 mwagegrowth_agg_m40 
@@ -98,6 +96,7 @@ the mean and median, the qunitile, the bottom and middle 40% as well as the raw 
  - Equivalized Household Earnings
 We will start with the workers hourly after cleaning:
  */
+
 * clean the data
 drop if date < mdy(12, 31, 1996)
 
@@ -151,7 +150,7 @@ forval i=1/5{
 	egen mwagegrowth_agg_q`i' = median(wagerate_agg_q`i'), by (date)
 }
 
-*** NY FED BINS
+*** NY FED EGIs bins
 gen wage_agg_40 = 1 if (wage_agg_q == 1 | wage_agg_q == 2)
 replace wage_agg_40 = 2 if (wage_agg_q == 3 | wage_agg_q == 4)
 gen wage_agg_40_tm12 = 1 if (wage_agg_q_tm12 == 1 | wage_agg_q_tm12 == 2)
