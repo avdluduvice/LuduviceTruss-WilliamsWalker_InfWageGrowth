@@ -54,7 +54,7 @@ forval i=1/5{
 	egen mwagegrowth_agg_q`i' = median(wagerate_agg_q`i'), by (date)
 }
 
-* NYFed EGIs bins
+* NYFed EHIs bins
 * here, we will combine the bottom 40% and the middle 40%
 gen wage_agg_40 = 1 if (wage_agg_q == 1 | wage_agg_q == 2)
 replace wage_agg_40 = 2 if (wage_agg_q == 3 | wage_agg_q == 4)
@@ -150,7 +150,7 @@ forval i=1/5{
 	egen mwagegrowth_agg_q`i' = median(wagerate_agg_q`i'), by (date)
 }
 
-*** NY FED EGIs bins
+*** NY FED EHIs bins
 gen wage_agg_40 = 1 if (wage_agg_q == 1 | wage_agg_q == 2)
 replace wage_agg_40 = 2 if (wage_agg_q == 3 | wage_agg_q == 4)
 gen wage_agg_40_tm12 = 1 if (wage_agg_q_tm12 == 1 | wage_agg_q_tm12 == 2)
