@@ -8,7 +8,7 @@ The data and code in this replication package implement the data transformations
 
 ## Recommended Citation
 
-Luduvice, André Victor D., Truss-Williams, Anaya, and Christopher J. Walker. 2025. "Did Inflation Affect Households Differently? A Look at the Postpandemic Inflation and Wage Growth Dynamics." Economic Commentary, no. 2025-XX (October). https://doi.org/10.26509/frbc-ec-2025xx.
+Luduvice, André Victor D., Truss-Williams, Anaya, and Christopher J. Walker. 2025. "Did Inflation Affect Households Differently? A Look at the Postpandemic Inflation and Wage Growth Dynamics." Economic Commentary, no. 2025-11 (October). https://doi.org/10.26509/frbc-ec-202511.
 
 ## Contents
 
